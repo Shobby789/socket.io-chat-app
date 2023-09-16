@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+.App {
+  background: white;
+  color: black;
+}
+
+.credentialBox {
+  width: 40% !important;
+  box-shadow: 0 0 20px rgb(219, 214, 219);
+}
+
+.chat-Box {
+  height: 70%;
+  width: 40% !important;
+  box-shadow: 0 0 30px rgb(240, 226, 226);
+}
+
+.chat-header {
+  height: 10%;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 10px 10px silver;
+}
+
+.chat-body {
+  height: 80%;
+  width: 100%;
+  background-color: rgb(235, 230, 230);
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.chat-footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: 1px solid white;
+  height: 10%;
+  width: 100%;
+}
+
+.msgBox {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  text-align: left;
+  padding: 10px;
+  width: 75%;
+  display: block;
+}
+
+.messageInput::placeholder {
+  color: rgb(125, 124, 124);
+}
+
+.myMsg {
+  /* background-color: #198754; */
+  background-color: rgb(244, 244, 191);
+  color: black;
+  color: white;
+  border-radius: 10px;
+  text-align: left;
+  padding: 10px;
+  width: 75%;
+  display: block;
+  float: right;
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .chat-Box {
+    width: 75%;
+  }
+  .credentialBox {
+    width: 60% !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .chat-Box {
+    width: 100% !important;
+    height: 100vh !important;
+  }
+  .credentialBox {
+    width: 100% !important;
+  }
+}
